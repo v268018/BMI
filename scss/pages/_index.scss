@@ -1,0 +1,53 @@
+:root{
+    --primary:#FFD366;
+}
+.header{
+    justify-content: space-evenly;  
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.advice{
+    color:var(--primary);
+    right:20px;
+}
+.btn_Style{
+    background:#FFD366;
+    height: 120px;
+    width: 120px;
+    border-radius:50%;
+    cursor: pointer;
+    &:hover{
+        color:#fff;
+        box-shadow:0 0 10px 3px #FFD366;
+    }
+}
+.result_Btn{
+    height: 120px;
+    width: 120px;
+    color:var(--primary);
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+}
+.return_Btn{
+    width: 30px;
+    height: 30px;
+    color:var(--primary);
+    background:var(--primary);
+    border-radius: 50%;
+    right:-8px;
+    bottom: 8px;
+}
+.bmi_list-Style{
+    width: 624px;
+    height: 62px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+    }
+};
+.footer_Img{
+    width: 55px;
+    height: 55px;
+}

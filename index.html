@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/all.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="container bg-secondary">
+        <div class="header d-flex  align-items-center position-relative">
+            <!-- logo -->
+            <div>
+                <img src="img/BMICLogo.png" alt="BMICLogo">
+            </div>
+            <form id="formList">
+                <div class="form-group">
+                  <label for="height" class="d-flex justify-content-between align-items-center text-primary text_L ">
+                    身高cm
+                    <span class="error_MessageH text-danger text_M"></span>
+                  </label>
+                  <input type="number" class="form-control height" id="height" placeholder="請輸入身高">
+                </div>
+                <div class="form-group">
+                  <label for="weight" class="d-flex justify-content-between align-items-center text-primary text_L">
+                      體重kg
+                      <span class="error_MessageW text-danger text_M"></span>
+                  </label>
+                  <input type="number" class="form-control" id="weight" placeholder="請輸入體重">
+                </div>
+            </form>
+            <!-- 計算 -->
+            <div class="calculation btn_Style d-flex justify-content-center align-items-center">
+                <span class="text_XXl font-weight-bold">看結果</span>
+            </div>
+            <!-- 建議 -->
+            <div class='advice text_XXXL position-absolute'></div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="container d-flex flex-column align-items-center bg-gray py-6">
+        <h1 class="text_XXl text-center font-weight-bold mb-5">BMI 紀錄</h1>
+        <ul id="bmiList" class="list-unstyled"></ul>
+    </main>
+
+    <!-- footer -->
+    <footer class="container bg-primary d-flex justify-content-center py-3">
+        <img src="https://upload.cc/i1/2020/07/04/36UfuO.png" class="footer_Img bg-dark">
+    </footer>
+
+    <script src="js/all.js"></script>
+   
+</body>
